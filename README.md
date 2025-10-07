@@ -13,6 +13,14 @@ pip install -U huggingface_hub
 huggingface-cli login --token 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 --add-to-git-credential
 python -c "from src.tucan.download_model import get_model; print(get_model())"
 </pre>
+* # create models/model.zip that contains the *contents* of models/Tucan
+<pre>
+cd models/Tucan
+zip -r ../model.zip .
+cd ../../
+</pre>
+# verify
+ls -lh models/model.zip
 ## Usage
 <pre>
 Usage: sturgeon-v2 [-h] [-i INPUT_FILE] [-m MODEL] [-c NUM_CPGS] [-o OUTPUT_FILE] [-s NUM_SAMPLINGS]
