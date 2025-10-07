@@ -3,12 +3,13 @@ This repository presents a pip installable software package to easily run tucan 
 
 ## Installation
 * Install using `pip install git+ssh://git@github.com/UMCUGenetics/tucan.git`
-* Download the tucan [zip file](https://filesender.surf.nl/?s=download&token=540a148b-a695-4ad7-a303-2f320dddf484)
-* Download the model from Hugging Face at runtime
-  pip install -U huggingface_hub
-  export HUGGINGFACE_HUB_TOKEN=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
-  python -c "from tucan.download_model import get_model; print(get_model())"
-
+* (this link is expired) Download the tucan [zip file](https://filesender.surf.nl/?s=download&token=540a148b-a695-4ad7-a303-2f320dddf484)
+* Download the model from Hugging Face 
+<pre>
+pip install -U huggingface_hub
+export HUGGINGFACE_HUB_TOKEN=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
+python -c "from src.tucan.download_model import get_model; print(get_model())"
+</pre>
 ## Usage
 <pre>
 Usage: sturgeon-v2 [-h] [-i INPUT_FILE] [-m MODEL] [-c NUM_CPGS] [-o OUTPUT_FILE] [-s NUM_SAMPLINGS]
