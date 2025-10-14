@@ -1,121 +1,54 @@
-Creative Commons Legal Code
+EVALUATION SOFTWARE LICENSE AGREEMENT
+IMPORTANT! 
+1) License to use the TUCAN Software. The software to allow bioinformatic sparse methylation analysis “TUCAN” (the “Software”) you seek to use is licensed only on the condition that you ("YOU") agree with Stichting Oncode Institute, with its office at Jaarbeursplein 6, 3521 AL Utrecht, NL (“Oncode”) to the terms and conditions set forth below. PLEASE CAREFULLY READ THE TERMS OF THIS SOFTWARE LICENSE AGREEMENT (the “Agreement”). If you do not agree to the terms of this Agreement, delete and do not use the Software.
 
-CC0 1.0 Universal
+2) Permission for Use.
+•	ONCODE grants to YOU a non-exclusive, non-transferable, non-sublicensable right to use the Software on the terms and conditions set out in this Agreement.
+•	The Software and any and all documentation, knowledge, know how and/or techniques relating to the Software, is and will remain the sole and absolute property of the Princess Máxima Center (PMC) and the UMC Utrecht (“UMCU”). Oncode specifically retains the right to grant licenses of the Software to third parties. 
 
-    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
-    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
-    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
-    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
-    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
-    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
-    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
-    HEREUNDER.
+3) Restrictions of Use.  Subject to Article 4, YOU SHALL NOT and will NOT authorize any third party to: 
+•	distribute, sell, re-sell, lease, transfer, loan, assign, trade, rent, publish or otherwise transfer the Software, or any part thereof and/or copies thereof, to others for consideration, financial or otherwise;
+•	improve, further develop, adapt, decompile, disassemble, translate into another computer language, create derivative works, use any part of the Software to mimic data or functionality in the Software, or otherwise reverse engineer the Software without the written permission of Oncode;
+•	alter or delete any of the copyright notices present on, or in the Software;
+•	license or sublicense the use of the Software to others without the written permission of Oncode;
+•	use, without its express permission, the name of Oncode and/or PMC and/or UMCU, or any trademark or logo of Oncode and/or PMC and/or UMCU in advertising, publicity, or otherwise;
+•	export or re-export the Software or any copy or adaptation, whether in violation of any applicable laws or regulations or otherwise; and
+•	Publish results obtained through YOUR use of the Software. 
 
-Statement of Purpose
+4) The Software was developed by Dr. Lennart Kester, Dr. Jeroen de Ridder, Dr. Marc Pagès Gallego, Dr. Carlo Vermeulen and Merel Jongmans of the Princess Máxima Center and the UMCU. The Software has the following dependencies, which are subject to their own open source licenses. Please review and agree to the appropriate open source license prior to using the Software:
 
-The laws of most jurisdictions throughout the world automatically confer
-exclusive Copyright and Related Rights (defined below) upon the creator
-and subsequent owner(s) (each and all, an "owner") of an original work of
-authorship and/or a database (each, a "Work").
+| Code           | Link                                                                                 | OS License                                  |
+|----------------|--------------------------------------------------------------------------------------|---------------------------------------------|
+| NumPy          | [https://numpy.org/](https://numpy.org/)                                             | BSD License                                 |
+| Numba          | [https://github.com/numba/numba/blob/main/LICENSE](https://github.com/numba/numba/blob/main/LICENSE) | BSD License                                 |
+| Pandas         | [https://github.com/pandas-dev/pandas/blob/main/LICENSE](https://github.com/pandas-dev/pandas/blob/main/LICENSE) | BSD License                                 |
+| Matplotlib     | [https://github.com/matplotlib/matplotlib/blob/main/LICENSE](https://github.com/matplotlib/matplotlib/blob/main/LICENSE) | BSD License                                 |
+| PyTorch        | [https://github.com/pytorch/pytorch/blob/master/LICENSE](https://github.com/pytorch/pytorch/blob/master/LICENSE) | BSD License                                 |
+| SciPy          | [https://www.scipy.org/](https://www.scipy.org/)                                     | BSD License                                 |
+| ONNX           | [https://github.com/onnx/onnx/blob/main/LICENSE](https://github.com/onnx/onnx/blob/main/LICENSE) | Apache 2.0 License                          |
+| Scikit-learn   | [https://github.com/scikit-learn/scikit-learn/blob/main/COPYING](https://github.com/scikit-learn/scikit-learn/blob/main/COPYING) | BSD License                                 |
+| Python         | [https://www.python.org/download/releases/3.4.0/license/](https://www.python.org/download/releases/3.4.0/license/) | Python Software Foundation License          |
 
-Certain owners wish to permanently relinquish those rights to a Work for
-the purpose of contributing to a commons of creative, cultural and
-scientific works ("Commons") that the public can reliably and without fear
-of later claims of infringement build upon, modify, incorporate in other
-works, reuse and redistribute as freely as possible in any form whatsoever
-and for any purposes, including without limitation commercial purposes.
-These owners may contribute to the Commons to promote the ideal of a free
-culture and the further production of creative, cultural and scientific
-works, or to gain reputation or greater distribution for their Work in
-part through the use and efforts of others.
+Oncode is the exclusive valorization partner for intellectual property and know how developed by the lab of Dr. Jeroen de Ridder and which is owned by UMCU. If YOU are interested in using the Software for any commercial purposes, please contact Oncode Business Development at valorization@oncode.nl, referencing Oncode file no. 2022-019. 
 
-For these and/or other purposes and motivations, and without any
-expectation of additional consideration or compensation, the person
-associating CC0 with a Work (the "Affirmer"), to the extent that he or she
-is an owner of Copyright and Related Rights in the Work, voluntarily
-elects to apply CC0 to the Work and publicly distribute the Work under its
-terms, with knowledge of his or her Copyright and Related Rights in the
-Work and the meaning and intended legal effect of CC0 on those rights.
+5) Representation of Authority.  YOU explicitly represent and warrant to Oncode that YOU possess the legal authority to enter into this Agreement, and that YOU will be financially responsible for your use of the Software. You agree to be responsible for all license fees, costs, charges and taxes arising out of your use of the Software. YOU also acknowledge that YOU are solely responsible for supplying any hardware necessary to use the Software pursuant to this Agreement.
 
-1. Copyright and Related Rights. A Work made available under CC0 may be
-protected by copyright and related or neighboring rights ("Copyright and
-Related Rights"). Copyright and Related Rights include, but are not
-limited to, the following:
+6) No Warranty.  YOU further acknowledge and agree that the Software is experimental in nature and is provided to YOU on an “as is” basis and for academic research purposes only. Oncode and/or PMC and/or UMCU have no obligation to provide any services, modifications, upgrades, updates, or replacements relating to the Software. YOU acknowledge and agree that Oncode and/or PMC and/or UMCU make no representations and extend no warranties of any kind, either express or implied. There are no express or implied warranties of merchantability or fitness of the Software for a particular purpose, or that the use of the Software will not infringe any patent, copyright, trademark or other rights, or any other express or implied representations or warranties. In particular, nothing in this Agreement is or will be construed as a warranty or representation by Oncode and/or PMC and/or UMCU as to the validity or scope of copyright or other intellectual property rights in the Software; an obligation to furnish any other software, technology, or technological information; an obligation on Oncode and/or PMC and/or UMCU to correct malfunctions that arise in the version of the Software that YOU receive. ONCODE AND PMC AND UMCU DO NOT WARRANT THAT THE SOFTWARE IS FREE FROM MALFUNCTIONS, NOR THAT ANY MALFUNCTIONS CAN OR WILL BE CORRECTED OR THAT ONCODE AND/OR PMC AND/OR UMCU WILL DEVELOP OR PROVIDE TO YOU ANY OPERATIONS, CAPABILITIES OR FEATURES NOT PRESENT IN THE VERSION OF THE SOFTWARE THAT YOU RECEIVE.  THE PARTIES ACKNOWLEDGE THAT THIS IS A THIRD PARTY CLAUSE (IN DUTCH ‘DERDENBEDING’) WHICH CAN BE INVOKED BY UMCU DIRECTLY AGAINST YOU.
 
-  i. the right to reproduce, adapt, distribute, perform, display,
-     communicate, and translate a Work;
- ii. moral rights retained by the original author(s) and/or performer(s);
-iii. publicity and privacy rights pertaining to a person's image or
-     likeness depicted in a Work;
- iv. rights protecting against unfair competition in regards to a Work,
-     subject to the limitations in paragraph 4(a), below;
-  v. rights protecting the extraction, dissemination, use and reuse of data
-     in a Work;
- vi. database rights (such as those arising under Directive 96/9/EC of the
-     European Parliament and of the Council of 11 March 1996 on the legal
-     protection of databases, and under any national implementation
-     thereof, including any amended or successor version of such
-     directive); and
-vii. other similar, equivalent or corresponding rights throughout the
-     world based on applicable law or treaty, and any national
-     implementations thereof.
+7) LIMITATION OF LIABILITY. YOU AGREE THAT IN NO EVENT SHALL ONCODE AND/OR PMC AND/OR UMCU BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY INDIRECT, CONSEQUENTIAL, INCIDENTAL, PUNITIVE OR SPECIAL DAMAGES WHATSOEVER, WITHOUT REGARD TO CAUSE OR THEORY OF LIABILITY, OR ANY DAMAGES (WHETHER DIRECT OR INDIRECT) INCURRED FOR LOSS OF BUSINESS, PROFITS OR REVENUE, LOSS OF PRIVACY, LOSS OF USE OF ANY DEVICE OR SOFTWARE (INCLUDING BUT NOT LIMITED TO, THE SOFTWARE), COSTS OF PROCURING SUBSTITUTE OR REPLACEMENT GOODS AND SERVICES, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION OR OTHER PECUNIARY LOSS ARISING OUT OF THIS AGREEMENT OR THE SOFTWARE PROVIDED HEREUNDER, EVEN IF ONCODE AND/OR PMC AND/OR UMCU HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NO MEMBER OF ONCODE, PMC, UMCU, THEIR BOARD OF GOVERNORS, OFFICERS, EMPLOYEES, FACULTY, STUDENTS, STAFF OR AGENTS WILL BE LIABLE FOR ANY UNAUTHORIZED ACCESS TO, OR ANY CORRUPTION, ERASURE, THEFT, DESTRUCTION, ALTERATION, INADVERTENT DISCLOSURE OR LOSS OF DATA, INFORMATION OR CONTENT TRANSMITTED, RECEIVED OR STORED BY OR IN CONNECTION WITH THE SOFTWARE REGARDLESS OF THE CAUSE. ONCODE AND/OR PMC AND/OR UMCU’S TOTAL LIABILITY, WHETHER UNDER THE EXPRESS OR IMPLIED TERMS OF THIS AGREEMENT, IN TORT (INCLUDING NEGLIGENCE), OR AT COMMON LAW, FOR ANY LOSS OR DAMAGE SUFFERED BY YOU, WHETHER DIRECT, INDIRECT OR SPECIAL, OR ANY OTHER SIMILAR OR LIKE DAMAGE THAT MAY ARISE OR DOES ARISE FROM ANY BREACHES OF THIS AGREEMENT BY ONCODE, PMC, UMCU, THEIR BOARD OF GOVERNORS, OFFICERS, EMPLOYEES, FACULTY, STUDENTS, STAFF OR AGENTS, IS STRICTLY LIMITED TO FIVE EURO (€5.00). THE PARTIES ACKNOWLEDGE THAT THIS IS A THIRD PARTY CLAUSE (IN DUTCH ‘DERDENBEDING’) WHICH CAN BE INVOKED BY UMCU DIRECTLY AGAINST YOU.
 
-2. Waiver. To the greatest extent permitted by, but not in contravention
-of, applicable law, Affirmer hereby overtly, fully, permanently,
-irrevocably and unconditionally waives, abandons, and surrenders all of
-Affirmer's Copyright and Related Rights and associated claims and causes
-of action, whether now known or unknown (including existing as well as
-future claims and causes of action), in the Work (i) in all territories
-worldwide, (ii) for the maximum duration provided by applicable law or
-treaty (including future time extensions), (iii) in any current or future
-medium and for any number of copies, and (iv) for any purpose whatsoever,
-including without limitation commercial, advertising or promotional
-purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
-member of the public at large and to the detriment of Affirmer's heirs and
-successors, fully intending that such Waiver shall not be subject to
-revocation, rescission, cancellation, termination, or any other legal or
-equitable action to disrupt the quiet enjoyment of the Work by the public
-as contemplated by Affirmer's express Statement of Purpose.
+8) INDEMNIFICATION. YOU AGREE TO INDEMNIFY, DEFEND AND HOLD HARMLESS ONCODE, PMC, UMCU, THEIR BOARD OF GOVERNORS, OFFICERS, EMPLOYEES, FACULTY, STUDENTS, STAFF AND AGENTS FROM AND AGAINST ANY AND ALL LIABILITY, LOSS, DAMAGE, ACTION, CLAIM OR EXPENSE (INCLUDING ATTORNEY'S FEES AND COSTS AT TRIAL AND APPELLATE LEVELS) IN CONNECTION WITH ANY CLAIM, SUIT, ACTION, DEMAND OR JUDGMENT ARISING OUT OF, CONNECTED WITH, RESULTING FROM, OR SUSTAINED AS A RESULT OF YOUR USE OF THE SOFTWARE OR IN EXECUTING AND PERFORMING THIS AGREEMENT. THE PARTIES ACKNOWLEDGE THAT THIS IS A THIRD PARTY CLAUSE (IN DUTCH ‘DERDENBEDING’) WHICH CAN BE INVOKED BY UMCU DIRECTLY AGAINST YOU.
 
-3. Public License Fallback. Should any part of the Waiver for any reason
-be judged legally invalid or ineffective under applicable law, then the
-Waiver shall be preserved to the maximum extent permitted taking into
-account Affirmer's express Statement of Purpose. In addition, to the
-extent the Waiver is so judged Affirmer hereby grants to each affected
-person a royalty-free, non transferable, non sublicensable, non exclusive,
-irrevocable and unconditional license to exercise Affirmer's Copyright and
-Related Rights in the Work (i) in all territories worldwide, (ii) for the
-maximum duration provided by applicable law or treaty (including future
-time extensions), (iii) in any current or future medium and for any number
-of copies, and (iv) for any purpose whatsoever, including without
-limitation commercial, advertising or promotional purposes (the
-"License"). The License shall be deemed effective as of the date CC0 was
-applied by Affirmer to the Work. Should any part of the License for any
-reason be judged legally invalid or ineffective under applicable law, such
-partial invalidity or ineffectiveness shall not invalidate the remainder
-of the License, and in such case Affirmer hereby affirms that he or she
-will not (i) exercise any of his or her remaining Copyright and Related
-Rights in the Work or (ii) assert any associated claims and causes of
-action with respect to the Work, in either case contrary to Affirmer's
-express Statement of Purpose.
+9) Term. YOU agree this Agreement is effective for an unlimited period, unless terminated earlier. 
 
-4. Limitations and Disclaimers.
+10) Termination. YOU may terminate this Agreement at any time by ceasing all use of the Software and destroying or deleting the Software (including the related documentation), together with all copies in any form. Oncode may terminate this Agreement immediately, and this Agreement shall be deemed to have automatically terminated, if YOU breach or fail to comply with any term or condition of this Agreement, or upon thirty (30) days’ notice. Upon any termination, including termination by YOU, YOU must destroy or return to Oncode the Software (including the related documentation or materials), together with all copies in any form, and YOU will have no further right to use the Software. Article 3 (Restrictions of Use), Article 6 (No Warranty), Article 7 (Limitation of Liability) and Article 8 (Indemnification) of this Agreement will however survive any termination of this Agreement.
 
- a. No trademark or patent rights held by Affirmer are waived, abandoned,
-    surrendered, licensed or otherwise affected by this document.
- b. Affirmer offers the Work as-is and makes no representations or
-    warranties of any kind concerning the Work, express, implied,
-    statutory or otherwise, including without limitation warranties of
-    title, merchantability, fitness for a particular purpose, non
-    infringement, or the absence of latent or other defects, accuracy, or
-    the present or absence of errors, whether or not discoverable, all to
-    the greatest extent permissible under applicable law.
- c. Affirmer disclaims responsibility for clearing rights of other persons
-    that may apply to the Work or any use thereof, including without
-    limitation any person's Copyright and Related Rights in the Work.
-    Further, Affirmer disclaims responsibility for obtaining any necessary
-    consents, permissions or other rights required for any use of the
-    Work.
- d. Affirmer understands and acknowledges that Creative Commons is not a
-    party to this document and has no duty or obligation with respect to
-    this CC0 or use of the Work.
+11) Governing Law. YOU agree this Agreement shall be governed by, interpreted and construed in accordance with, the laws of the Netherlands, without regard to any conflict of laws principles that would result in the application of laws of any other jurisdiction. YOU agree that by accepting the terms of this Agreement and using the Software YOU have attorned to the exclusive jurisdiction of the competent courts of The Netherlands. The Parties agree that the competent courts of The Netherlands have exclusive jurisdiction over this Agreement. 
+
+12) Miscellaneous. No modification of this Agreement will be binding on the parties, unless in writing and signed by an authorized representative of each party. 
+
+Should any provision of this Agreement be declared invalid or unenforceable, then such provision shall be deemed severable from this Agreement and shall not affect the validity or enforceability of the remaining provisions hereof. All rights in the Software not specifically granted in this Agreement are reserved by UMCU. 
+
+YOU may not assign or transfer this Agreement (by merger, operation of law or in any other manner) without the prior written consent of Oncode and any attempt to do so without such consent shall be void, with no legal force and effect, and shall constitute a material breach of this Agreement by YOU.
+
+YOU acknowledge that YOU have read this Agreement, understand it, and that by using the Software YOU agree to be bound by its terms and conditions. YOU further agree that it is the complete and exclusive statement of the agreement between Oncode and YOU, and supersedes any proposal or prior agreement, oral or written, and any other communication between Oncode and YOU relating to the subject matter of this Agreement. 
