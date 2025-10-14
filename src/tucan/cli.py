@@ -22,14 +22,14 @@ def predict(input_file, path_to_model_files, n, output_file, num_samples, file_t
 
     classes = list(classification_file['decoder']['type'].keys())
     class_names = list(classification_file['encoder']['type'].keys())
-    output_size = len(classes)
+    classification_sizes = len(classes)
 
     # Load probe file
     probe_df = pl.read_csv(
         os.path.join(path_to_model_files, 'probe.bed'), 
         separator='\t'
     )
-    input_size = len(probe_df)
+    in_size = len(probe_df)
 
     # Load input depending on type
     if file_type == 'csv':
@@ -76,8 +76,8 @@ def predict(input_file, path_to_model_files, n, output_file, num_samples, file_t
     models = []
     for i in range(4):  # Tucan uses 4 submodels
         model = SturgeonSubmodel(
-            input_size=input_size, 
-            output_size=output_size, 
+            in_size=in_size, 
+            classification_sizes=classification_sizes, 
             activation='silu'
         ).to(device)
 
@@ -86,12 +86,36 @@ def predict(input_file, path_to_model_files, n, output_file, num_samples, file_t
             weights_only=False, 
             map_location=device
         )
-        model.load_state_dict(chk)
+        print(chk, flush=True)
+        model.load_state_dict(chk['model_state'])
         model.eval()
         models.append(model)
 
+            # --- inspect what's inside the checkpoint ---
+    # Many checkpoints store params under 'model_state' or 'state_dict'.
+        if isinstance(chk, dict):
+            if "model_state" in chk:
+                state = chk["model_state"]
+            elif "state_dict" in chk:
+                state = chk["state_dict"]
+            else:
+            # Sometimes the checkpoint *is* the state_dict already
+                state = chk
+        else:
+            state = chk
+
+        print(f"\n=== Checkpoint {i} param shapes ===")
+        for key, value in state.items():
+            if hasattr(value, "shape"):
+                print(f"{key}: {tuple(value.shape)}")
+            else:
+            # Non-tensor entries (rare for state_dicts)
+                print(f"{key}: {type(value).__name__}")
+
+
+
     nn_input = torch.tensor(nn_input['methylation_call'].to_numpy())
-    result = np.zeros((num_samples, output_size))
+    result = np.zeros((num_samples, classification_sizes))
 
     print('-------------------------------')
     print('Running subsample predictions')

@@ -13,7 +13,7 @@ python -c "from src.tucan.download_model import get_model; print(get_model())"
 </pre>
 ## Usage
 <pre>
-Usage: sturgeon-v2 [-h] [-i INPUT_FILE] [-m MODEL] [-c NUM_CPGS] [-o OUTPUT_FILE] [-s NUM_SAMPLINGS]
+Usage: tucan [-h] [-i INPUT_FILE] [-m MODEL] [-c NUM_CPGS] [-o OUTPUT_FILE] [-s NUM_SAMPLINGS]
                    [-f FILE_TYPE]
 
 Options:
