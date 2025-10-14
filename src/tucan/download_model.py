@@ -2,14 +2,14 @@ from huggingface_hub import snapshot_download
 from pathlib import Path
 import os
 
-def get_model(local_dir: str = "models/Tucan", revision: str | None = None) -> str:
+def get_model(local_dir: str = "models/model", revision: str | None = None) -> str:
     """
-    Downloads the Hugging Face repo 'MerelJongmans/Tucan' into local_dir (cached).
+    Downloads the Hugging Face repo 'MerelJongmans/model' into local_dir (cached).
     If the repo is private, set HUGGINGFACE_HUB_TOKEN in env.
     Returns the local path.
     """
     path = snapshot_download(
-        repo_id="MerelJongmans/Tucan",
+        repo_id="MerelJongmans/model",
         repo_type="model",
         local_dir=local_dir,
         local_dir_use_symlinks=False,  # simpler for packaging/docker
