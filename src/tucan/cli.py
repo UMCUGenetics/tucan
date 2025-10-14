@@ -86,33 +86,31 @@ def predict(input_file, path_to_model_files, n, output_file, num_samples, file_t
             weights_only=False, 
             map_location=device
         )
-        print(chk, flush=True)
+        #print(chk, flush=True)
         model.load_state_dict(chk['model_state'])
         model.eval()
         models.append(model)
 
             # --- inspect what's inside the checkpoint ---
     # Many checkpoints store params under 'model_state' or 'state_dict'.
-        if isinstance(chk, dict):
-            if "model_state" in chk:
-                state = chk["model_state"]
-            elif "state_dict" in chk:
-                state = chk["state_dict"]
-            else:
-            # Sometimes the checkpoint *is* the state_dict already
-                state = chk
-        else:
-            state = chk
+    #    if isinstance(chk, dict):
+    #        if "model_state" in chk:
+    #            state = chk["model_state"]
+    #        elif "state_dict" in chk:
+    #            state = chk["state_dict"]
+    #        else:
+    #        # Sometimes the checkpoint *is* the state_dict already
+    #            state = chk
+    #    else:
+    #        state = chk
 
-        print(f"\n=== Checkpoint {i} param shapes ===")
-        for key, value in state.items():
-            if hasattr(value, "shape"):
-                print(f"{key}: {tuple(value.shape)}")
-            else:
+     #   print(f"\n=== Checkpoint {i} param shapes ===")
+      #  for key, value in state.items():
+      #      if hasattr(value, "shape"):
+      #          print(f"{key}: {tuple(value.shape)}")
+      #      else:
             # Non-tensor entries (rare for state_dicts)
-                print(f"{key}: {type(value).__name__}")
-
-
+       #         print(f"{key}: {type(value).__name__}")
 
     nn_input = torch.tensor(nn_input['methylation_call'].to_numpy())
     result = np.zeros((num_samples, classification_sizes))
