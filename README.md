@@ -10,8 +10,9 @@ This repository presents a pip installable software package to easily run tucan 
 pip install -U huggingface_hub
 python -c "from src.tucan.download_model import get_model; print(get_model())"
 </pre>
-* change it to zip file
-`zip -r models/model.zip models/model`  
+* changle dir `cd models`
+* zip file
+`zip -r model.zip model`  
 
 
 ## Usage
