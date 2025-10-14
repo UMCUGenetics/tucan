@@ -1,26 +1,19 @@
-# tucan
+# Tucan
 This repository presents a pip installable software package to easily run tucan in a clinical setting.
 
-## Installation HvdE
-* Install using `pip install git+ssh://git@github.com/UMCUGenetics/tucan.git`
-* (this link is expired) Download the tucan [zip file](https://filesender.surf.nl/?s=download&token=540a148b-a695-4ad7-a303-2f320dddf484)
-## Installation MJ
+## Installation 
 * `git clone https://github.com/UMCUGenetics/tucan.git`
+* `cd tucan`
 * Install the project in 'editable' mode `pip install -e .` 
 * Download the model from Hugging Face 
 <pre>
 pip install -U huggingface_hub
-huggingface-cli login --token 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 --add-to-git-credential
 python -c "from src.tucan.download_model import get_model; print(get_model())"
 </pre>
-* # create models/model.zip that contains the *contents* of models/Tucan
-<pre>
-cd models/Tucan
-zip -r ../model.zip .
-cd ../../
-</pre>
-# verify
-ls -lh models/model.zip
+* change it to zip file
+`zip -r models/model.zip models/model`  
+
+
 ## Usage
 <pre>
 Usage: tucan [-h] [-i INPUT_FILE] [-m MODEL] [-c NUM_CPGS] [-o OUTPUT_FILE] [-s NUM_SAMPLINGS]
