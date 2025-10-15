@@ -29,10 +29,11 @@ Options:
   -c NUM_CPGS, --num_CpGs NUM_CPGS
                         specify the number of samples CpG sites (default is to use all available sites).
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
-                        input
+                        path to output file
   -s NUM_SAMPLINGS, --num_samplings NUM_SAMPLINGS
                         Specify the number of random samples of size num_CpGs. Default is 1 random
                         sampling.
   -f FILE_TYPE, --file_type FILE_TYPE
                         input file type 'bed' or 'csv'
 </pre>
+
