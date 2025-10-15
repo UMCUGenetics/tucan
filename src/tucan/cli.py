@@ -17,12 +17,37 @@ def predict(input_file, path_to_model_files, n, output_file, num_samples, file_t
         num_samples = 1
 
     # Load classification system
+    #with open(os.path.join(path_to_model_files, 'classification_system.yaml'), 'r') as stream:
+    #    classification_file = yaml.safe_load(stream)
+
+    #classes = list(classification_file['decoder']['type'].keys())
+    #class_names = list(classification_file['encoder']['type'].keys())
+    #classification_sizes = len(classes)
+
+    # Load classification system
     with open(os.path.join(path_to_model_files, 'classification_system.yaml'), 'r') as stream:
         classification_file = yaml.safe_load(stream)
 
-    classes = list(classification_file['decoder']['type'].keys())
-    class_names = list(classification_file['encoder']['type'].keys())
-    classification_sizes = len(classes)
+    encoder = classification_file['encoder']['type']   # e.g. {"ClassA": 0, "ClassB": 1, ...}
+    decoder = classification_file['decoder']['type']   # e.g. {"0": "ClassA", "1": "ClassB", ...} or {0: "ClassA", 1: "ClassB"}
+
+    # Ensure class names are ordered by the class index used by the model outputs
+    try:
+        # prefer decoder: index -> name
+        idx_name_pairs = sorted(
+            ((int(k), v) for k, v in decoder.items()),
+            key=lambda kv: kv[0]
+        )
+        class_names = [name for _, name in idx_name_pairs]
+        classification_sizes = len(idx_name_pairs)
+    except Exception:
+        # fallback: sort encoder by its index values
+        class_names = [name for name, idx in sorted(encoder.items(), key=lambda kv: int(kv[1]))]
+        classification_sizes = len(class_names)
+    
+    #print("Class index → name mapping used for columns:")
+    #for i, name in enumerate(class_names):
+    #    print(f"{i} → {name}")
 
     # Load probe file
     probe_df = pl.read_csv(
