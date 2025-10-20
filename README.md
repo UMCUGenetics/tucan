@@ -37,6 +37,15 @@ Options:
                         input file type 'bed' or 'csv'
 </pre>
 
+## Preparing data into the right format: bed or csv
+Tucan accepts input in either **BED** or **CSV** format, containing the methylation calls.  
+An example BED file snippet is available here: [data/bedExample.bed](data/bedExample.bed).
+
+Methylation calls can be extracted from a Nanopore BAM file using **[modkit](https://github.com/nanoporetech/modkit)**.  
+Detailed instructions for this process are available in the [Sturgeon repository](https://github.com/UMCUGenetics/sturgeon).
+
+> **Note:** The Sturgeon implementation determines methylation status at CpG sites based on the **Illumina methylation array coordinates**, including a **±25 bp window** around each CpG site.  
+> This means methylation calls are aggregated not only at the exact array position but also within this surrounding margin.
 
 ## Table: Abbreviation - Tumor Type
 See the full table: [docs/tumor_abbreviation.md](docs/tumor_abbreviation.md)
