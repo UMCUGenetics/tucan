@@ -39,5 +39,4 @@ Options:
 
 
 ## Table: Abbreviation - Tumor Type
-See the full table: [docs/tumor_abbreviation.md](docs/tumor_abbreviations.md)
-
+See the full table: [docs/tumor_abbreviation.md](docs/tumor_abbreviation.md)
