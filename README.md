@@ -37,3 +37,7 @@ Options:
                         input file type 'bed' or 'csv'
 </pre>
 
+
+## Table: Abbreviation - Tumor Type
+See the full table: [docs/tumor_abbreviation.md](docs/tumor_abbreviations.md)
+
