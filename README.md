@@ -37,6 +37,9 @@ Options:
                         input file type 'bed' or 'csv'
 </pre>
 
+> **Recommendation:** For optimal performance, set -c between 10,000 and 20,000 CpG sites. Using too many CpG sites may cause the model to become overconfident and increase the likelihood of misclassification.
+> >
+
 ## Preparing data into the right format: bed or csv
 Tucan accepts input in either **BED** or **CSV** format, containing the methylation calls.  
 An example BED file snippet is available here: [data/bedExample.bed](data/bedExample.bed).
