@@ -1,7 +1,17 @@
 # Tucan
 This repository presents a pip installable software package to easily run tucan in a clinical setting.
 
+## System requirements
+- Python >= 3.9  
+- Dependencies and version constraints are defined in `pyproject.toml`:
+  https://github.com/UMCUGenetics/tucan/blob/main/pyproject.toml  
+
+- The software has been tested on Linux (Ubuntu 20.04) and macOS.  
+- No non-standard hardware is required (CPU sufficient; GPU optional).
+
 ## Installation 
+Installation time: ~5–10 minutes on a standard desktop computer.
+
 * `git clone https://github.com/UMCUGenetics/tucan.git`
 * `cd tucan`
 * Install the project in 'editable' mode `pip install -e .` 
@@ -49,6 +59,22 @@ Detailed instructions for this process are available in the [Sturgeon repository
 
 > **Note:** The Sturgeon implementation determines methylation status at CpG sites based on the **Illumina methylation array coordinates**, including a **±25 bp window** around each CpG site.  
 > This means methylation calls are aggregated not only at the exact array position but also within this surrounding margin.
+
+## Demo
+Example command:
+
+tucan -i data/bedExample.bed -m models/model.zip -o output.csv
+
+Expected output:
+A CSV file containing predicted tumor class and confidence scores.
+
+Expected runtime:
+~1–5 minutes per sample on a standard CPU.
+
+## Running Tucan on your data
+1. Extract methylation calls from Nanopore BAM files (e.g. using modkit)
+2. Convert to BED or CSV format
+3. Run Tucan using the command above
 
 ## Table: Abbreviation - Tumor Type
 See the full table: [docs/tumor_abbreviation.md](docs/tumor_abbreviation.md)
