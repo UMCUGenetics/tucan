@@ -6,6 +6,19 @@ __pycache__/
 # C extensions
 *.so
 
+# macOS
+.DS_Store
+
+# Model files
+models/
+*.pt
+*.pth
+*.onnx
+*.zip
+
+# HuggingFace cache (optional but good)
+.cache/
+
 # Distribution / packaging
 .Python
 build/
