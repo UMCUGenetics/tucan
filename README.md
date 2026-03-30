@@ -1,5 +1,5 @@
 # Tucan
-This repository presents a pip installable software package to easily run tucan in a clinical setting.
+This repository provides a pip-installable software package to run Tucan for methylation-based tumor classification in a clinical setting.
 
 ## System requirements
 - Python >= 3.9  
@@ -15,7 +15,7 @@ Installation time: ~5–10 minutes on a standard desktop computer.
 * `git clone https://github.com/UMCUGenetics/tucan.git`
 * `cd tucan`
 * Install the project in 'editable' mode `pip install -e .` 
-* Download the model from Hugging Face 
+* Download the pretrained model from Hugging Face 
 <pre>
 pip install -U huggingface_hub
 python -c "from src.tucan.download_model import get_model; print(get_model())"
@@ -24,6 +24,7 @@ python -c "from src.tucan.download_model import get_model; print(get_model())"
 * zip file
 `zip -r model.zip model`  
 
+The model path returned by this command should be provided to the `-m` argument.
 
 ## Usage
 <pre>
@@ -61,12 +62,10 @@ Detailed instructions for this process are available in the [Sturgeon repository
 > This means methylation calls are aggregated not only at the exact array position but also within this surrounding margin.
 
 ## Demo
-Example command:
+A small example dataset is provided in the repository under [demo_tucan/Data](demo_tucan/Data), along with the corresponding expected output in [demo_tucan/Output](demo_tucan/Data).
 
-tucan -i data/bedExample.bed -m models/model.zip -o output.csv
-
-Expected output:
-A CSV file containing predicted tumor class and confidence scores.
+### Run the demo:
+`tucan -i demo_tucan/Data/testSample1.merged_probes_methyl_calls.bed -m <path_to_model> -c 10000 -o demo_tucan/Output/OutcomeTestSample1.csv -s 1 -f csv`
 
 Expected runtime:
 ~1–5 minutes per sample on a standard CPU.
@@ -75,6 +74,9 @@ Expected runtime:
 1. Extract methylation calls from Nanopore BAM files (e.g. using modkit)
 2. Convert to BED or CSV format
 3. Run Tucan using the command above
+
+## Reproducibility
+The example dataset and output provided in `demo_tucan` can be used to verify correct installation and execution of the Tucan software. The full methodology is described in the manuscript Methods section.
 
 ## Table: Abbreviation - Tumor Type
 See the full table: [docs/tumor_abbreviation.md](docs/tumor_abbreviation.md)
