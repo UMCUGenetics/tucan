@@ -1,0 +1,389 @@
+classification_system: sarcoma_pmc_3
+decoder:
+  family:
+    0: UNCLEAR
+    1: CARCINOMA
+    2: CHONDROGENIC
+    3: CONTROL
+    4: GERM_CELL
+    5: HEPATIC
+    6: LIPOMATOUS
+    7: LYMPHOMA
+    8: MYO_FIBROBLASTIC
+    9: NEPRHOMA
+    10: NERVE_SHEATH
+    11: NEUROEPITHELIOMATOUS
+    12: NON_MESENCHYMAL
+    13: NOTOCHORDAL
+    14: NOVEL
+    15: OSTEOCLASTIC
+    16: OSTEOGENIC
+    17: PERICYTIC
+    18: SKELETAL_MUSCLE
+    19: SMALL_ROUND_CELL
+    20: SMOOTH_MUSCLE
+    21: UNCERTAIN_DIFFERENTIATION
+    22: UNDEFINED
+    23: UNDIFFERENTIATED
+    24: VASCULAR
+  type:
+    0: UNCLEAR
+    1: ACC
+    2: LEC
+    3: MEL
+    4: THCA
+    5: CBL
+    6: CS_A
+    7: CS_B
+    8: CS_CC
+    9: CS_IDHA
+    10: CS_IDHB
+    11: CS_M
+    12: CTRL_BL
+    13: CTRL_BO
+    14: CTRL_MU
+    15: CTRL_NOS
+    16: CTRL_RT
+    17: EC
+    18: SE
+    19: SLCT
+    20: SLCT_DICER1
+    21: TE
+    22: YST
+    23: HB
+    24: LB
+    25: LP
+    26: LS
+    27: LS_M
+    28: ALCL
+    29: BL
+    30: DLBCL
+    31: T-LBL
+    32: DF
+    33: DFSP
+    34: IFS
+    35: IMT
+    36: MO
+    37: MP
+    38: NOF
+    39: SCS
+    40: SFT
+    41: WT
+    42: MPNST
+    43: NF
+    44: NF_P
+    45: SCHW
+    46: pRCC
+    47: NBL/GNBL
+    48: PHEO
+    49: CPH
+    50: LCH
+    51: SCC
+    52: CHD
+    53: CHD_D
+    54: SARC_RMSL
+    55: GCTB
+    56: ABC
+    57: OBL
+    58: OS
+    59: ALM
+    60: aRMS
+    61: eRMS
+    62: mRMS
+    63: BCOR
+    64: CCS
+    65: CIC
+    66: DICER1_HG
+    67: DICER1_LG
+    68: DSRCT
+    69: EWS
+    70: LM
+    71: LMS
+    72: AFH
+    73: ASPS
+    74: CS_EM
+    75: ES
+    76: MRT
+    77: NUT
+    78: OFT
+    79: PEC
+    80: SCCOHT
+    81: SS
+    82: FD
+    83: USARC
+    84: AS
+    85: jGCT
+    86: aGCT
+    87: CTRL_KI
+    88: CTRL_LI
+    89: EHE
+    90: GIST
+    91: KS
+    92: ccRCC
+    93: chRCC
+    94: lgFS
+    95: B-LBL
+    96: HL
+
+encoder:
+  family:
+    UNCLEAR: 0
+    CARCINOMA: 1
+    CHONDROGENIC: 2
+    CONTROL: 3
+    GERM_CELL: 4
+    HEPATIC: 5
+    LIPOMATOUS: 6
+    LYMPHOMA: 7
+    MYO_FIBROBLASTIC: 8
+    NEPRHOMA: 9
+    NERVE_SHEATH: 10
+    NEUROEPITHELIOMATOUS: 11
+    NON_MESENCHYMAL: 12
+    NOTOCHORDAL: 13
+    NOVEL: 14
+    OSTEOCLASTIC: 15
+    OSTEOGENIC: 16
+    PERICYTIC: 17
+    SKELETAL_MUSCLE: 18
+    SMALL_ROUND_CELL: 19
+    SMOOTH_MUSCLE: 20
+    UNCERTAIN_DIFFERENTIATION: 21
+    UNDEFINED: 22
+    UNDIFFERENTIATED: 23
+    VASCULAR: 24
+  type:
+    UNCLEAR: 0
+    ABC: 56
+    ACC: 1
+    AFH: 72
+    aGCT: 86
+    ALCL: 28
+    ALM: 59
+    AS: 84
+    ASPS: 73
+    BCOR: 63
+    BL: 29
+    B-LBL: 95
+    CBL: 5
+    ccRCC: 92
+    CCS: 64
+    chRCC: 93
+    CHD: 52
+    CHD_D: 53
+    CIC: 65
+    CPH: 49
+    CS_A: 6
+    CS_B: 7
+    CS_CC: 8
+    CS_EM: 74
+    CS_IDHA: 9
+    CS_IDHB: 10
+    CS_M: 11
+    CTRL_BL: 12
+    CTRL_BO: 13
+    CTRL_KI: 87
+    CTRL_LI: 88
+    CTRL_MU: 14
+    CTRL_NOS: 15
+    CTRL_RT: 16
+    DF: 32
+    DFSP: 33
+    DICER1_HG: 66
+    DICER1_LG: 67
+    DLBCL: 30
+    DSRCT: 68
+    EC: 17
+    EHE: 89
+    ES: 75
+    EWS: 69
+    FD: 82
+    GCTB: 55
+    GIST: 90
+    HB: 23
+    HL: 96
+    IFS: 34
+    IMT: 35
+    jGCT: 85
+    KS: 91
+    LB: 24
+    LCH: 50
+    LEC: 2
+    lgFS: 94
+    LM: 70
+    LMS: 71
+    LP: 25
+    LS: 26
+    LS_M: 27
+    MEL: 3
+    MO: 36
+    MP: 37
+    MPNST: 42
+    MRT: 76
+    NBL/GNBL: 47
+    NF: 43
+    NF_P: 44
+    NOF: 38
+    NUT: 77
+    OBL: 57
+    OFT: 78
+    OS: 58
+    PEC: 79
+    PHEO: 48
+    pRCC: 46
+    SARC_RMSL: 54
+    SCC: 51
+    SCCOHT: 80
+    SCHW: 45
+    SCS: 39
+    SE: 18
+    SFT: 40
+    SLCT: 19
+    SLCT_DICER1: 20
+    SS: 81
+    T-LBL: 31
+    TE: 21
+    THCA: 4
+    USARC: 83
+    WT: 41
+    YST: 22
+    aRMS: 60
+    eRMS: 61
+    mRMS: 62
+hierarchy:
+- 0:family
+- 1:type
+tree:
+  CONTROL:
+  - CTRL_BL
+  - CTRL_BO
+  - CTRL_MU
+  - CTRL_NOS
+  - CTRL_RT
+  - CTRL_KI
+  - CTRL_LI
+  UNCLEAR:
+  - UNCLEAR
+  CARCINOMA:
+  - ACC
+  - LEC
+  - MEL
+  - THCA
+  - ccRCC
+  - chRCC
+  - pRCC
+  - SCC
+  CHONDROGENIC:
+  - CBL
+  - CS_A
+  - CS_B
+  - CS_CC
+  - CS_IDHA
+  - CS_IDHB
+  - CS_M
+  GERM_CELL:
+  - EC
+  - SE
+  - SLCT
+  - SLCT_DICER1
+  - TE
+  - YST
+  - jGCT
+  - aGCT
+  HEPATIC:
+  - HB
+  LIPOMATOUS:
+  - LB
+  - LP
+  - LS
+  - LS_M
+  LYMPHOMA:
+  - ALCL
+  - BL
+  - DLBCL
+  - T-LBL
+  - HL
+  - B-LBL
+  MYO_FIBROBLASTIC:
+  - DF
+  - DFSP
+  - IFS
+  - IMT
+  - MO
+  - MP
+  - NOF
+  - SCS
+  - SFT
+  - lgFS
+  NEPRHOMA:
+  - WT
+  NERVE_SHEATH:
+  - MPNST
+  - NF
+  - NF_P
+  - SCHW
+  NEUROEPITHELIOMATOUS:
+  - NBL/GNBL
+  - PHEO
+  NOTOCHORDAL:
+  - CHD
+  - CHD_D
+  OSTEOCLASTIC:
+  - GCTB
+  OSTEOGENIC:
+  - ABC
+  - OBL
+  - OS
+  PERICYTIC:
+  - ALM
+  - PEC
+  SKELETAL_MUSCLE:
+  - aRMS
+  - eRMS
+  - mRMS
+  - SARC_RMSL
+  SMALL_ROUND_CELL:
+  - BCOR
+  - CCS
+  - CIC
+  - DICER1_HG
+  - DICER1_LG
+  - DSRCT
+  - EWS
+  SMOOTH_MUSCLE:
+  - LM
+  - LMS
+  UNCERTAIN_DIFFERENTIATION:
+  - AFH
+  - ASPS
+  - CS_EM
+  - ES
+  - MRT
+  - NUT
+  - OFT
+  - SCCOHT
+  - SS
+  - USARC
+  UNDEFINED:
+  - FD
+  - GIST
+  - CPH
+  - LCH
+  VASCULAR:
+  - AS
+  - EHE
+  - KS
+controls:
+  family: 
+  - CONTROL
+  type: 
+  - CTRL_BL
+  - CTRL_BO
+  - CTRL_MU
+  - CTRL_NOS
+  - CTRL_RT
+  - CTRL_KI
+  - CTRL_LI
+  
+  
+  
