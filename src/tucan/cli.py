@@ -40,7 +40,9 @@ def predict(
         # Adjust this if your zip contains a top-level folder
         # e.g. tmpdir/cns-v2/
         # --------------------------------------------------------------
-        model_root = tmpdir
+        #model_root = tmpdir
+        
+        model_root = os.path.join(tmpdir, model_zip_path.split('/')[-1].split('.')[0])
 
         # Example if needed:
         # model_root = os.path.join(tmpdir, "cns-v2")
