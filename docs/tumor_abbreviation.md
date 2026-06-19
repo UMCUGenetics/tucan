@@ -44,6 +44,7 @@ DLBCL | Diffuse large B-cell lymphoma
 DSRCT | Desmoplastic small round cell tumour
 EC | Embryonal carcinoma, NOS
 EHE | Epithelioid haemangioendothelioma
+eRMS | Embryonal Rhabdomyosarcoma
 ES | Epithelioid sarcoma
 EWS | Ewing sarcoma
 FD | Fibrous dysplasia
@@ -69,7 +70,7 @@ MP | Myositis proliferans
 MPNST | Malignant peripheral nerve sheath tumour
 MRT | Malignant rhabdoid tumour
 mRMS | Rhabdomyosarcoma (MYOD1)
-NBL/GNBL | Neuroblastoma
+NBL/GNBL | Neuroblastoma/Ganglioneuroblastoma
 NF | Neurofibroma
 NF P | Neurofibroma (plexiform)
 NOF | Nodular fasciitis
@@ -77,6 +78,7 @@ NUT | NUT carcinoma
 OBL | Osteoblastoma
 OFT | Ossifying fibromyxoid tumour
 OS | Osteosarcoma
+PEC | Perivascular epithelioid cell tumor
 PHEO | Pheochromocytoma
 pRCC | Papillary renal cell adenocarcinoma, NOS
 SCC | Squamous cell carcinoma (cutaneous)
@@ -93,5 +95,6 @@ tRCC | Translocation associated renal cell carcinoma
 TE | Teratoma, NOS
 THCA | Papillary thyroid adenocarcinoma, NOS
 T-LBL | T-cell lymphoblastic lymphoma
+USARC | Undifferentiated sarcoma
 WT | Wilms tumor
 YST | Yolk sac tumor
