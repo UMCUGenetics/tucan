@@ -65,7 +65,7 @@ Detailed instructions for this process are available in the [Sturgeon repository
 A small example dataset is provided in the repository under [demo_tucan/Data](demo_tucan/Data), along with the corresponding expected output in [demo_tucan/Output](demo_tucan/Data).
 
 ### Run the demo:
-`tucan -i demo_tucan/Data/testSample1.merged_probes_methyl_calls.bed -m <path_to_model> -c 10000 -o demo_tucan/Output/OutcomeTestSample1.csv -s 1 -f csv`
+`tucan -i demo_tucan/Data/testSample1.merged_probes_methyl_calls.bed -m <path_to_model> -c 10000 -o demo_tucan/Output/OutcomeTestSample1.csv -s 1 -f bed`
 
 Expected runtime:
 ~1–5 minutes per sample on a standard CPU.
